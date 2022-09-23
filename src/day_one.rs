@@ -72,6 +72,11 @@ mod tests {
         }
     }
 
+    #[test]
+    fn get_solution_two() {
+        assert_eq!(solve_second(INPUT), 200878544)
+    }
+
     const INPUT: &str = "1780
 1693
 1830
