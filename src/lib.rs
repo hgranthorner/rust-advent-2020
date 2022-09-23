@@ -1,3 +1,3 @@
-#![warn(clippy::all, clippy::pedantic)]
+#![warn(clippy::all)]
 
 pub mod day_one;
