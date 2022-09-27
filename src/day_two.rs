@@ -69,13 +69,13 @@ pub fn solve_second(s: &str) -> usize {
     count
 }
 
-const SAMPLE: &str = "1-3 a: abcde
-1-3 b: cdefg
-2-9 c: ccccccccc";
-
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    const SAMPLE: &str = "1-3 a: abcde
+1-3 b: cdefg
+2-9 c: ccccccccc";
 
     #[test]
     fn test_first() {
@@ -87,7 +87,6 @@ mod tests {
         assert_eq!(solve_first(INPUT), 572)
     }
 
-
     #[test]
     fn test_second() {
         assert_eq!(solve_second(SAMPLE), 1)
@@ -98,9 +97,7 @@ mod tests {
         assert_eq!(solve_second(INPUT), 306)
     }
 
-}
-
-const INPUT: &str = "15-16 p: ppppppppppplppppp
+    const INPUT: &str = "15-16 p: ppppppppppplppppp
 4-9 m: xvrwfmkmmmc
 14-15 w: wwwwdwwwwwwwwnwww
 7-16 q: qhqdljqtdqqdqqjjcqq
@@ -1100,3 +1097,4 @@ const INPUT: &str = "15-16 p: ppppppppppplppppp
 5-6 d: dwdddzd
 7-8 d: ddddwddddj
 8-9 w: wwwwwwwxww";
+}
